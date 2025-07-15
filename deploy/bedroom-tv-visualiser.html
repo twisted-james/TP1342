@@ -23,7 +23,8 @@
         <!-- Removed margin-bottom from this container -->
         <div class="text-center">
             <h1 class="text-2xl md:text-3xl font-bold text-gray-800">TV Size Visualiser for 26CR</h1>
-            <p class="text-gray-600 mt-1">Comparing TV sizes within a 1260mm x 705mm recess.</p>
+            <p class="text-gray-600 mt-1">Comparing approximate TV sizes within a 1260mm x 705mm recess.</p>
+            <p class="text-gray-600 mt-1">Sizes visualised are scaled to account for TV bezels and casing rather than just the screen size.</p>
             <!-- Reworded intro to be a call to action -->
             <p class="text-gray-600 mt-2">Select a size from the options below to see how it fits.</p>
         </div>
@@ -74,6 +75,13 @@
              </div>
         </div>
 
+        <!-- Footer with Twisted Pear branding -->
+        <footer class="mt-12 pt-6 border-t border-gray-200 text-center">
+            <div class="text-gray-500 text-sm">
+                <p>&copy; 2025 Built by <a href="https://twistedpear.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">Twïsted Pear</a></p>
+            </div>
+        </footer>
+
     </div>
 
     <script>
@@ -84,8 +92,8 @@
             // Recess dimensions in mm
             const recessWidthMM = 1260;
             const recessHeightMM = 705;
-            // Scaling factor to account for TV bezels and casing (3%)
-            const physicalSizeScaleFactor = 1.03;
+            // Scaling factor to account for TV bezels and casing (4%)
+            const physicalSizeScaleFactor = 1.04;
 
             // TV data ordered from largest to smallest.
             const tvData = [
